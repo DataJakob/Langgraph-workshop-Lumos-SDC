@@ -8,13 +8,12 @@ import os
 
 class PortofolioCloud:
 
-    def __init__(self, stocks, 
-                 cloud_size, 
-                 start_date, end_date=None
+    def __init__(self, stocks,  
+                 end_date=None
                  ):
         self.stocks = stocks
-        self.cloud_size = cloud_size
-        self.start_date = start_date
+        self.cloud_size = 500
+        self.start_date = "2024-01-01"
         if end_date != None:
             self.end_date = end_date
         else: 
@@ -37,9 +36,9 @@ class PortofolioCloud:
             data = [0]
             for j in range(0, yahoo.shape[0]-1,1):
                 # print(yahoo )
-                selecive_data = (yahoo['Adj Close'][j+1]/yahoo['Adj Close'][j]-1)
+                selecive_data = (yahoo['Close'][self.stocks[i]].iloc[j+1]/yahoo['Close'][self.stocks[i]].iloc[j]-1)
                 data.append(selecive_data)
-            adj_close = yahoo['Adj Close']
+            adj_close = yahoo['Close']
             relevant  = [self.stocks[i], data, adj_close]
             df.append(relevant)
         self.stocks_matrix = df
@@ -121,4 +120,3 @@ class PortofolioCloud:
         plt.legend()
         # plt.show()
         plt.savefig('stocks.png')
-        
