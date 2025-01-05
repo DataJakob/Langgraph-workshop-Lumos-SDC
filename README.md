@@ -8,18 +8,27 @@ This repository contains two folders. The folder "demo" showcases an example of 
 <h2> Instructions </h1>
 
 Open terminal: 
+```bash
 git clone https://github.com/DataJakob/Langgraph-workshop-Lumos_SDC.git
-
-Create .env file in repo, add following info:
+```
+Buy an openai API key. Create a file named ".env" in repo and add following info:
+```bash
 OPEN_API_KEY="my_key_value"
+```
 
 Create enviroment:
+```bash
 python -m venv myenv
+```
 
 Activate enviroment:
+```bash
 myenv\Scripts\activate
+```
 
 Install requirements:
+```bash
 pip install -r requirements.txt
+```
 
 Choose myenv as kernel in Jupyter notebook and run cells.
