@@ -5,6 +5,10 @@ The presentation was about Langgraph, a framework for building agentic AI applic
 
 This repository contains two folders. The folder "demo" showcases an example of a graph that shall work as an financial advisor. The second folder "tryit" contains a simple example of an graph with that works as an try-it-yourself notebook.
 
+<h2> Content </h2>
+The <b>demo</b> folder is the contains the code for the demonstration that was performed during the presentation.
+<br><br>
+The <b>try_it_yourself</b> folder contains a notebook with a graph that has been partially set up. You need to do some small coding tasks in order for the graph to run. 
 <h2> Instructions </h1>
 
 Open terminal: 
