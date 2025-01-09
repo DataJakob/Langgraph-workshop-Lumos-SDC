@@ -6,6 +6,8 @@ from scipy.optimize import minimize
 
 import matplotlib.pyplot as plt
 
+# Insp: https://www.kaggle.com/code/trangthvu/efficient-frontier-optimization
+
 class Optimized:
 
     def __init__(self, stocks, portofolio_cloud, 
@@ -20,7 +22,6 @@ class Optimized:
         self.returns = returns
         self.mean = mean
         self.stds = stds
-
 
     def PortofolioOptimizer(self):
 

@@ -9,7 +9,7 @@ This repository contains two folders. The folder "demo" showcases an example of 
 
 Open terminal: 
 ```bash
-git clone https://github.com/DataJakob/Langgraph-workshop-Lumos_SDC.git
+git clone https://github.com/DataJakob/Langgraph-workshop-Lumos-SDC.git
 ```
 Buy an openai API key. Create a file named ".env" in repo and add following info:
 ```bash
